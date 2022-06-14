@@ -19,17 +19,16 @@ ngay_nhap date,
 primary key(id_phieu_nhap));
 
 create table don_dat_hang(
-id_don_dat_hang int auto_increment,
+id_don_dat_hang int not null,
+id_nha_cung_cap int,
 ngay_dat_hang date,
+FOREIGN KEY (id_nha_cung_cap) REFERENCES nha_cung_cap(id_nha_cung_cap),
 primary key(id_don_dat_hang));
 
 create table nha_cung_cap(
-id_nha_cung_cap int auto_increment,
+id_nha_cung_cap int not null,
 ten_nha_cung_cap varchar(50),
 dia_chi_nha_cung_cap varchar(50),
-sdt_nha_cung_cap varchar(10),
-id_don_dat_hang int,
-FOREIGN KEY (id_don_dat_hang) REFERENCES don_dat_hang(id_don_dat_hang),
 primary key(id_nha_cung_cap));
 
 create table chi_tiet_phieu_xuat(
@@ -56,11 +55,12 @@ id_vat_tu int,
 primary key(id_don_dat_hang,id_vat_tu),
 FOREIGN KEY (id_don_dat_hang) REFERENCES don_dat_hang(id_don_dat_hang),
 FOREIGN KEY (id_vat_tu) REFERENCES vat_tu(id_vat_tu));
--- drop table don_dat_hang;
--- create table cung_cap(
--- id_don_dat_hang int,
--- id_nha_cung_cap int,
--- primary key(id_don_dat_hang,id_nha_cung_cap),
--- FOREIGN KEY (id_don_dat_hang) REFERENCES don_dat_hang(id_don_dat_hang),
--- FOREIGN KEY (id_nha_cung_cap) REFERENCES nha_cung_cap(id_nha_cung_cap));
 
+create table so_dien_thoai(
+id_nha_cung_cap int,
+sdt varchar(10),
+primary key(id_nha_cung_cap),
+FOREIGN KEY (id_nha_cung_cap) REFERENCES nha_cung_cap(id_nha_cung_cap));
+
+
+-- drop table so_dien_thoai;
