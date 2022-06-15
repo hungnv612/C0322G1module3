@@ -70,8 +70,8 @@ join product p on p.p_id = od.p_id;
 
 select * from customer,oder_detail;	
 
-select c.* , count(o.id_oder) as so_lan_mua_hang
-from cutomer c
-left join `oder` o on c.id_cutomer = o.id_cutomer
-group by o.id_oder;
-
+select c.* , count(o.o_id) as so_lan_mua_hang
+from customer c
+left join `order` o on c.c_id = o.c_id
+group by o.o_id 
+having count(o.o_id)=0;
