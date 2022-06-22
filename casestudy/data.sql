@@ -1,5 +1,3 @@
-use casestudy;
-
 insert into vi_tri(ten_vi_tri)
 values ('Quản lý'),('Nhân Viên');
 insert into trinh_do (ten_trinh_do)
@@ -67,3 +65,13 @@ values
 ('2021-04-12', '2021-04-14', '0', '10', '3', '5'),
 ('2021-04-25', '2021-04-25', '0', '2', '2', '1'),
 ('2021-05-25', '2021-05-27', '0', '7', '10', '1');
+insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem)
+values
+('5', '2', '4'),
+('8', '2', '5'),
+('15', '2', '6'),
+('1', '3', '1'),
+('11', '3', '2'),
+('1', '1', '3'),
+('2', '1', '2'),
+('2', '12', '2');

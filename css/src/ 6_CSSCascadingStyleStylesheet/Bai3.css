@@ -1,0 +1,26 @@
+
+#body_head{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #316b98e8;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 2px rgba(232, 229, 229, 0.43);
+}
+
+.body_p{
+    margin: 40px 30px 40px 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#phan_dau{
+    font-style:italic ;
+    font-size: 20px;
+}
+#phan_cuoi{
+    font-style:italic ;
+    font-size: 20px;
+}
+p.normal {
+    font-style:italic ;
+    font-size: 20px;
+}
