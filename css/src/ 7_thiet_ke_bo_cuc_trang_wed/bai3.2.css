@@ -1,0 +1,95 @@
+#menu {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+#menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    width: 100px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#menu ul ul li a {
+    width: 130px;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+#menu li a:hover {
+    background-color: red;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+}
+
+.body-left {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.body-content {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+.ads {
+    margin: 10px;
+    width: 90%;
+    height: 60px;
+    padding: 20px 0;
+    text-align: center;
+    border: gray solid;
+    border-radius: 2px;
+}
+
+.body-right {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+}

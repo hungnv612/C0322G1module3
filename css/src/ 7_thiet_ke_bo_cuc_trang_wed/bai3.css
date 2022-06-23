@@ -1,6 +1,7 @@
 * {
-    margin: 0;
+    box-sizing: border-box;
 }
+
 .col-1 {
     width: 8.33%;
 }
@@ -48,73 +49,15 @@
 .col-12 {
     width: 100%;
 }
-body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #f1f1f1;
-    width: auto;
-    height: auto;
-}
 
-.menu {
-    height: 30px;
-    padding: 0;
-    margin: 0;
-    background-color: #000000;
-    border: 1px solid #CDCDCD;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu ul, .menu li {
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    position: relative;
+[class*="col-"] {
     float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 15px;
+    border: 1px solid red;
 }
 
-.menu li a {
-    width: 100px;
-    height: 30px;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    line-height: 30px;
-    background-color: black;
-    color: white;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
-.menu ul ul li a {
-    width: 200px;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.menu li a:hover {
-    background-color: red;
-}
-
-.menu ul ul {
-    position: absolute;
-    top: 30px;
-    left: 15px;
-    visibility: hidden;
-}
-
-.menu ul li:hover ul {
-    visibility: visible;
-}
-.body-part{
-    display: flex;
-}
-
-
-
-
