@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Admin
-  Date: 29/06/2022
-  Time: 1:54 CH
+  User: LENOVO PC
+  Date: 6/28/2022
+  Time: 9:13 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,6 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <a href="/student">Danh sách Student</a>
+  <a href="/student?action=create">Thêm mới Student</a>
   </body>
 </html>
