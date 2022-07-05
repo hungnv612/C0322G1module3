@@ -16,12 +16,12 @@
 
 </head>
 <body>
-<center>
+<div style="text-align: center;">
     <h1>User Management</h1>
     <h2>
         <a href="users?action=users">List All Users</a>
     </h2>
-</center>
+</div>
 <div align="center">
     <caption>
         <h2>Add New User</h2>
@@ -47,12 +47,11 @@
                     <input type="text" name="country" id="country" size="15"/>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2" align="center" >
-                    <input  type="submit" value="Save" />
-                </td>
-            </tr>
+
         </table>
+            <td colspan="2" align="center">
+                <input class="button" type="submit" value="Save"/>
+            </td>
     </form>
 </div>
 </body>

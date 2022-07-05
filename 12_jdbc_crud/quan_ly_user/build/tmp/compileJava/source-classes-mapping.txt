@@ -6,9 +6,9 @@ service/IUserService.java
  service.IUserService
 reponsitory/IUserReponsitory.java
  reponsitory.IUserReponsitory
-controller/UserServlet.java
- controller.UserServlet
-service/UserService.java
- service.UserService
 reponsitory/UserReponsitory.java
  reponsitory.UserReponsitory
+service/UserService.java
+ service.UserService
+controller/UserServlet.java
+ controller.UserServlet
